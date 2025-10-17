@@ -18,11 +18,12 @@ Descrição da necessidade de informatização.
 
 # 2. Descrição de requisitos
 
-Colocar os requisitos em uma tabela indicando se são requisitos internos da empresa ou se são funcionalidades/operações executadas no sistema do DETRAN
+<!---
+Cole aqui os requisitos em uma tabela indicando se são requisitos internos da empresa ou se são funcionalidades/operações executadas no sistema do DETRAN 
+--->
 
 # 3. Diagramas
 
 # 3.1. Diagrama ER (entidade relacionamento)
-
 
 
