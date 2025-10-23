@@ -55,11 +55,30 @@ Tabela 1. Requisitos internos da empresa e/ou que dependem do sistema do DETRAN.
 | 30 | A empresa marca vistoria pelo detran para a transferência de um veículo| x | x |
 | 31 | A empresa faz o processo de recuperar veículo sinistrado | x | x |
 
+# 2.1 Descrição de Requisitos Funcionais do Sistema 
+
+| ID | Requisitos funcionais do sistema  |
+|----|--------------------------------------:|
+| 1  | O sistema deve permitir o cadastro do veículo com data de entrada, placa, modelo, nome, telefone, descrição, serviço e valor |
+| 2  | O sistema deve registrar data de vistorias que serão ou já foram feitas pelo detran |
+| 3  | O sistema deve registrar vistorias que serão ou já foram feitas por uma empresa terceirizada | 
+| 4  | O sistema deve colocar um lembrete de vistorias que estão próximas para fazer ou vencer | 
+| 5  | O sistema deve ter um campo para adicionar lembretes, o qual conterá: placa, modelo, nome do cliente, numero e uma descrição | 
+| 6  | O sistema deve agrupar os veículos pelo mês | 
+| 7  | O sistema deve gerar um relatório de serviços do mês, o qual conterá placa, modelo, serviço, valor e nome do cliente para fins financeiros | 
+| 8  | O sistema deve ter na tela principal uma tabela de prioridades do dia, a qual conterá informações do data de entrada, placa, modelo, nome do cliente, telefone, descrição, serviço e valor | 
+| 9  | O sistema deve permitir consultas por meio da placa, nome do cliente ou numero do telefone | 
+| 10 | O sistema deve possuir uma tabela para acompanhar os parcelamentos de IPVA dos clientes, a qual conterá o nome do cliente, numero de telefone, placa, modelo, valor do ipva, valor da parcela e quantidade |
+| 11 | A tabela de IPVA deve ter um botão para selecionar se a parcela ja foi enviada para o cliente naquele mês | 
+| 12 | O sistema deve apresentar uma tabela de sinal publico, que conterá placa, veiculo, nome do cliente, numero e valor | 
+| 13 | O sistema deve possuir uma tabela dos processos que foram devolvidos, com os campos: placa, modelo, nome do cliente e motivo da devolução | 
+| 14 | O sistema deve registrar se o serviço já foi pago | 
+
 # 3. Diagramas
 
 # 3.1. Diagrama ER (entidade relacionamento)
 
-# Modelo Entidade-Relacionamento - Sistema de Atividades de Despachante
+# Modelo 1. Entidade-Relacionamento - Sistema de Atividades de Despachante
 
 ```mermaid
 erDiagram
@@ -110,5 +129,128 @@ erDiagram
     ATIVIDADES }o--|| ATIVIDADE_SITUACAO_VEICULO : ""
     ATIVIDADE_SITUACAO_VEICULO }o--|| SITUACOES_VEICULO : ""
 ```
+# Modelo 2. Entidade-Relacionamento - Sistema de Gestão de Despachante
 
+```mermaid
+erDiagram
+    CLIENTE {
+        int id PK
+        varchar nome NOT_NULL
+        varchar telefone NOT_NULL
+        datetime created_at
+    }
+    
+    VEICULO {
+        int id PK
+        varchar placa UNIQUE
+        varchar modelo
+        varchar descricao
+        datetime data_entrada
+        int cliente_id FK
+    }
+    
+    SERVICO {
+        int id PK
+        varchar tipo_servico NOT_NULL
+        decimal valor
+        boolean pago DEFAULTfalse
+        int veiculo_id FK
+        datetime created_at
+    }
+    
+    VISTORIA {
+        int id PK
+        varchar tipo_vistoria NOT_NULL
+        datetime data_agendada
+        datetime data_realizada
+        boolean realizada DEFAULTfalse
+        int veiculo_id FK
+        varchar empresa NOT_NULL
+    }
+    
+    LAMBERTE {
+        int id PK
+        varchar placa
+        varchar modelo
+        varchar nome_cliente
+        varchar numero
+        text descricao
+        datetime created_at
+    }
+    
+    IPVA {
+        int id PK
+        int cliente_id FK
+        int veiculo_id FK
+        decimal valor_total
+        decimal valor_parcela
+        int quantidade_parcelas
+        boolean parcela_enviada DEFAULTfalse
+        int mes_referencia
+        int ano_referencia
+    }
+    
+    SINAL_PUBLICO {
+        int id PK
+        varchar placa
+        varchar veiculo
+        varchar nome_cliente
+        varchar numero
+        decimal valor
+        datetime created_at
+    }
+    
+    PROCESSO_DEVOLVIDO {
+        int id PK
+        varchar placa
+        varchar modelo
+        varchar nome_cliente
+        text motivo_devolucao
+        datetime data_devolucao
+    }
+    
+    RELATORIO_MENSAL {
+        int id PK
+        int mes
+        int ano
+        decimal total_servicos
+        datetime gerado_em
+    }
+
+    CLIENTE ||--o{ VEICULO : "possui"
+    CLIENTE ||--o{ IPVA : "possui"
+    VEICULO ||--o{ SERVICO : "realiza"
+    VEICULO ||--o{ VISTORIA : "agenda"
+    CLIENTE ||--o{ SINAL_PUBLICO : "registra"
+    CLIENTE ||--o{ PROCESSO_DEVOLVIDO : "tem"
+    RELATORIO_MENSAL }o--o{ SERVICO : "inclui"
+```
+
+## Descrição das Entidades:
+
+### CLIENTE
+- Cadastro central de clientes com nome e telefone
+- Relaciona com veículos, IPVA, sinal público e processos devolvidos
+
+### VEICULO
+- Registro completo do veículo com placa, modelo e descrição
+- Data de entrada para controle de tempo no sistema
+
+### SERVICO
+- Controle de serviços realizados com valores e status de pagamento
+- Base para relatórios mensais financeiros
+
+### VISTORIA
+- Gestão de vistorias (DETRAN e terceirizadas)
+- Controle de agendamento e realização
+
+### IPVA
+- Acompanhamento parcelamento IPVA
+- Controle de envio de parcelas mensais
+
+### Entidades Auxiliares:
+- **LAMBERTE**: Controle de lambetes
+- **SINAL_PUBLICO**: Registro de sinais públicos
+- **PROCESSO_DEVOLVIDO**: Histórico de processos devolvidos
+- **RELATORIO_MENSAL**: Relatórios financeiros mensais
 
