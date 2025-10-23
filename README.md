@@ -24,7 +24,7 @@ Tabela 1. Requisitos internos da empresa e/ou que dependem do sistema do DETRAN.
 | ID | Nome da Atividade | Interna | DETRAN |
 |----|--------------------|:-------:|:------:|
 | 1  | A empresa emite recibo de transferência de veículos automotores e reboques do Mato Grosso| x | x |
-| 2  | A empresa emite recibo de transferência de veículos automotores e reboques de outras UF para o MT |  | x |
+| 2  | A empresa emite recibo de transferência de veículos automotores e reboques de outras UF para o MT | x | x |
 | 3  | A empresa emite boletos de impostos de veículos automotores e reboques do Mato Grosso  | x | x |
 | 4  | A empresa pode emitir uma placa mercosul decorativa | x |   |
 | 5  | A empresa pode realizar o processo de transferência de um veículo de outro UF para o estado do MT | x | x |
