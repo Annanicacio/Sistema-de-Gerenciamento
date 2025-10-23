@@ -24,36 +24,36 @@ Tabela 1. Requisitos internos da empresa e/ou que dependem do sistema do DETRAN.
 | ID | Nome da Atividade | Interna | DETRAN |
 |----|--------------------|:-------:|:------:|
 | 1  | A empresa emite recibo de transferência de veículos automotores e reboques do Mato Grosso| x | x |
-| 2  | A empresa emite recibo de transferência de veículos automotores e reboques de outras UF para o MT | x |  |
-| 3  | A empresa emite boletos de impostos de veículos automotores e reboques do Mato Grosso  | x |  |
-| 4  | A empresa pode emitir uma placa mercosul decorativa | x |  |
-| 5  | A empresa pode realizar o processo de transferência de um veículo de outro UF para o estado do MT | x |  |
-| 6  | A empresa realiza a transferência de propriedade, município ou jurisdição de veículos automotores e reboques para o MT |  | x |
-| 7  | A empresa faz o processo de primeiro emplacamento de veículos automotores e suas extensões |  | x |
-| 8  | A empresa pode acompanhar o parcelamento do IPVA de um cliente e efetuar o envio do boleto mensalmente | x |  |
-| 9  | A empresa pode parcelar multas e demais débitos referente a veículos automotores e reboques no cartão | x |  |
-| 10 | A empresa realiza a segunda via de placa Mercosul de veículos|  | x |
-| 11 | A empresa efetua a troca de placa do modelo antigo para a Mercosul |  | x |
+| 2  | A empresa emite recibo de transferência de veículos automotores e reboques de outras UF para o MT |  | x |
+| 3  | A empresa emite boletos de impostos de veículos automotores e reboques do Mato Grosso  | x | x |
+| 4  | A empresa pode emitir uma placa mercosul decorativa | x |   |
+| 5  | A empresa pode realizar o processo de transferência de um veículo de outro UF para o estado do MT | x | x |
+| 6  | A empresa realiza a transferência de propriedade, município ou jurisdição de veículos automotores e reboques para o MT | x | x |
+| 7  | A empresa faz o processo de primeiro emplacamento de veículos automotores e suas extensões | x | x |
+| 8  | A empresa pode acompanhar o parcelamento do IPVA de um cliente e efetuar o envio do boleto mensalmente | x |   |
+| 9  | A empresa pode parcelar multas e demais débitos referente a veículos automotores e reboques no cartão | x | x |
+| 10 | A empresa realiza a segunda via de placa Mercosul de veículos| x | x |
+| 11 | A empresa efetua a troca de placa do modelo antigo para a Mercosul | x | x |
 | 12 | A empresa emite segunda via de recibo de transferência de veículos automotores e reboques | x | x |
-| 13 | A empresa faz o processo de baixa definitiva de veículo |  | x |
+| 13 | A empresa faz o processo de baixa definitiva de veículo | x | x |
 | 14 | A empresa emite uma listagem de débitos todo fim do mês para fins de pagamento | x |  |
-| 15 | A empresa pode intermediar uma venda ao encontrar o proprietário do veículo com auxilio do sistema Detran | x |  |
-| 16 | A empresa transfere veículo de leilão |  | x |
-| 17 | A empresa marca vistoria lacrada para veículos |  | x |
-| 18 | A empresa pode marcar vistoria particular para um veículo| x |  |
-| 19 | A empresa transfere veículo com inventário |  | x |
-| 20 | A empresa faz o procedimento de Inclusão de gravame no documento do veículo |  | x |
-| 21 | A empresa pode consultar bloqueio administrativo de um veículo |  | x |
-| 22 | A empresa auxilia no processo de retirar veículo apreendido no guincho |  | x |
-| 23 | A empresa auxilia no processo de retirar veículo de outra UF apreendido no guincho |  | x |
-| 24 | A empresa faz comunicado de venda de um veículo |  | x |
-| 25 | A empresa emite comunicado de venda de um veículo de outra UF |  | x |
-| 26 | A empresa pode cancelar intenção de venda de um veículo |  | x |
-| 27 | A empresa pode cancelar intenção de venda de um veículo de outra UF |  | x |
-| 28 | A empresa realiza a troca de categoria de veículo |  | x |
-| 29 | A empresa faz o processo de alteração de característica de veículo |  | x |
-| 30 | A empresa marca vistoria pelo detran para a transferência de um veículo|  | x |
-| 31 | A empresa faz o processo de recuperar veículo sinistrado |  | x |
+| 15 | A empresa pode intermediar uma venda ao encontrar o proprietário do veículo com auxilio do sistema Detran | x |   |
+| 16 | A empresa transfere veículo de leilão | x | x |
+| 17 | A empresa marca vistoria lacrada para veículos | x |   |
+| 18 | A empresa pode marcar vistoria particular para um veículo| x |   |
+| 19 | A empresa transfere veículo com inventário | x | x |
+| 20 | A empresa faz o procedimento de Inclusão de gravame no documento do veículo | x | x |
+| 21 | A empresa pode consultar bloqueio administrativo de um veículo | x | x |
+| 22 | A empresa auxilia no processo de retirar veículo apreendido no guincho | x | x |
+| 23 | A empresa auxilia no processo de retirar veículo de outra UF apreendido no guincho | x |   |
+| 24 | A empresa faz comunicado de venda de um veículo | x | x |
+| 25 | A empresa emite comunicado de venda de um veículo de outra UF | x |   |
+| 26 | A empresa pode cancelar intenção de venda de um veículo | x | x |
+| 27 | A empresa pode cancelar intenção de venda de um veículo de outra UF | x |   |
+| 28 | A empresa realiza a troca de categoria de veículo | x | x |
+| 29 | A empresa faz o processo de alteração de característica de veículo | x | x |
+| 30 | A empresa marca vistoria pelo detran para a transferência de um veículo| x | x |
+| 31 | A empresa faz o processo de recuperar veículo sinistrado | x | x |
 
 # 3. Diagramas
 
