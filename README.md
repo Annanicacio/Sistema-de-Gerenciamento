@@ -57,7 +57,7 @@ Tabela 1. Requisitos internos da empresa e/ou que dependem do sistema do DETRAN.
 
 # 2.1 Descrição de Requisitos Funcionais do Sistema 
 
-| ID | Requisitos funcionais do sistema  |
+| ID | Requisitos funcionais do sistema     |
 |----|--------------------------------------:|
 | 1  | O sistema deve permitir o cadastro do veículo com data de entrada, placa, modelo, nome, telefone, descrição, serviço e valor |
 | 2  | O sistema deve registrar data de vistorias que serão ou já foram feitas pelo detran |
@@ -135,49 +135,39 @@ erDiagram
 erDiagram
     CLIENTE {
         int id PK
-        varchar nome NOT_NULL
-        varchar telefone NOT_NULL
+        string nome
+        string telefone
         datetime created_at
     }
-    
+
     VEICULO {
         int id PK
-        varchar placa UNIQUE
-        varchar modelo
-        varchar descricao
+        string placa
+        string modelo
+        string descricao
         datetime data_entrada
         int cliente_id FK
     }
-    
+
     SERVICO {
         int id PK
-        varchar tipo_servico NOT_NULL
+        string tipo_servico
         decimal valor
-        boolean pago DEFAULTfalse
+        boolean pago
         int veiculo_id FK
         datetime created_at
     }
-    
+
     VISTORIA {
         int id PK
-        varchar tipo_vistoria NOT_NULL
+        string tipo_vistoria
         datetime data_agendada
         datetime data_realizada
-        boolean realizada DEFAULTfalse
+        boolean realizada
         int veiculo_id FK
-        varchar empresa NOT_NULL
+        string empresa
     }
-    
-    LAMBERTE {
-        int id PK
-        varchar placa
-        varchar modelo
-        varchar nome_cliente
-        varchar numero
-        text descricao
-        datetime created_at
-    }
-    
+
     IPVA {
         int id PK
         int cliente_id FK
@@ -185,46 +175,44 @@ erDiagram
         decimal valor_total
         decimal valor_parcela
         int quantidade_parcelas
-        boolean parcela_enviada DEFAULTfalse
+        boolean parcela_enviada
         int mes_referencia
-        int ano_referencia
-    }
-    
-    SINAL_PUBLICO {
-        int id PK
-        varchar placa
-        varchar veiculo
-        varchar nome_cliente
-        varchar numero
-        decimal valor
-        datetime created_at
-    }
-    
-    PROCESSO_DEVOLVIDO {
-        int id PK
-        varchar placa
-        varchar modelo
-        varchar nome_cliente
-        text motivo_devolucao
-        datetime data_devolucao
-    }
-    
-    RELATORIO_MENSAL {
-        int id PK
-        int mes
-        int ano
-        decimal total_servicos
-        datetime gerado_em
     }
 
-    CLIENTE ||--o{ VEICULO : "possui"
-    CLIENTE ||--o{ IPVA : "possui"
-    VEICULO ||--o{ SERVICO : "realiza"
-    VEICULO ||--o{ VISTORIA : "agenda"
-    CLIENTE ||--o{ SINAL_PUBLICO : "registra"
-    CLIENTE ||--o{ PROCESSO_DEVOLVIDO : "tem"
-    RELATORIO_MENSAL }o--o{ SERVICO : "inclui"
+    LAMBERTE {
+        int id PK
+        string placa
+        string modelo
+        string nome_cliente
+        string numero
+        string descricao
+    }
+
+    SINAL_PUBLICO {
+        int id PK
+        string placa
+        string veiculo
+        string nome_cliente
+        string numero
+        decimal valor
+    }
+
+    PROCESSO_DEVOLVIDO {
+        int id PK
+        string placa
+        string modelo
+        string nome_cliente
+        string motivo_devolucao
+    }
+
+    CLIENTE ||--o{ VEICULO : possui
+    CLIENTE ||--o{ IPVA : tem
+    VEICULO ||--o{ SERVICO : realiza
+    VEICULO ||--o{ VISTORIA : agenda
+    CLIENTE ||--o{ SINAL_PUBLICO : registra
+    CLIENTE ||--o{ PROCESSO_DEVOLVIDO : tem_processo
 ```
+
 
 ## Descrição das Entidades:
 
