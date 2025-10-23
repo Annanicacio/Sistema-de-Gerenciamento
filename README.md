@@ -59,8 +59,9 @@ Tabela 1. Requisitos internos da empresa e/ou que dependem do sistema do DETRAN.
 
 # 3.1. Diagrama ER (entidade relacionamento)
 
-teste 
+# Modelo Entidade-Relacionamento - Sistema de Atividades de Despachante
 
+```mermaid
 erDiagram
     CATEGORIAS_ATIVIDADE {
         int id PK
@@ -101,8 +102,13 @@ erDiagram
         int situacao_veiculo_id PK,FK
     }
 
-    CATEGORIAS_ATIVIDADE ||--o{ ATIVIDADES : possui
-    ATIVIDADES }o--o{ TIPOS_VEICULO : aplica_se_a
-    ATIVIDADES }o--o{ SITUACOES_VEICULO : relaciona_com
+    CATEGORIAS_ATIVIDADE ||--o{ ATIVIDADES : "possui"
+    ATIVIDADES }o--o{ TIPOS_VEICULO : "aplica_se_a"
+    ATIVIDADES }o--o{ SITUACOES_VEICULO : "relaciona_com"
+    ATIVIDADES }o--|| ATIVIDADE_TIPO_VEICULO : ""
+    ATIVIDADE_TIPO_VEICULO }o--|| TIPOS_VEICULO : ""
+    ATIVIDADES }o--|| ATIVIDADE_SITUACAO_VEICULO : ""
+    ATIVIDADE_SITUACAO_VEICULO }o--|| SITUACOES_VEICULO : ""
+```
 
 
