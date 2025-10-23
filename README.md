@@ -59,4 +59,50 @@ Tabela 1. Requisitos internos da empresa e/ou que dependem do sistema do DETRAN.
 
 # 3.1. Diagrama ER (entidade relacionamento)
 
+teste 
+
+erDiagram
+    CATEGORIAS_ATIVIDADE {
+        int id PK
+        varchar nome_categoria
+        text descricao
+    }
+    
+    ATIVIDADES {
+        int id PK
+        varchar nome_atividade
+        text descricao
+        boolean interna
+        boolean detran
+        int categoria_id FK
+        timestamp created_at
+        timestamp updated_at
+    }
+    
+    TIPOS_VEICULO {
+        int id PK
+        varchar nome_tipo
+        text descricao
+    }
+    
+    SITUACOES_VEICULO {
+        int id PK
+        varchar nome_situacao
+        text descricao
+    }
+    
+    ATIVIDADE_TIPO_VEICULO {
+        int atividade_id PK,FK
+        int tipo_veiculo_id PK,FK
+    }
+    
+    ATIVIDADE_SITUACAO_VEICULO {
+        int atividade_id PK,FK
+        int situacao_veiculo_id PK,FK
+    }
+
+    CATEGORIAS_ATIVIDADE ||--o{ ATIVIDADES : possui
+    ATIVIDADES }o--o{ TIPOS_VEICULO : aplica_se_a
+    ATIVIDADES }o--o{ SITUACOES_VEICULO : relaciona_com
+
 
