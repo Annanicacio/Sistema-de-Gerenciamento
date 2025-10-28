@@ -74,64 +74,11 @@ Tabela 1. Requisitos internos da empresa e/ou que dependem do sistema do DETRAN.
 | 11 | A tabela de IPVA deve ter um botão para selecionar se a parcela já foi enviada para o cliente naquele mês |
 | 12 | O sistema deve apresentar uma tabela de sinal público, que conterá placa, veículo, nome do cliente, numero e valor |
 | 13 | O sistema deve possuir uma tabela dos processos que foram devolvidos com os campos: placa, modelo, nome do cliente e motivo |
-| 14 | O sistema deve registrar se o serviço já foi pago | 
+| 14 | O sistema deve registrar a situação do pagamento do serviço | 
 
 # 3. Diagramas
 
-# 3.1. Diagrama ER (entidade relacionamento)
-
-# Modelo 1. Entidade-Relacionamento - Sistema de Atividades de Despachante
-
-```mermaid
-erDiagram
-    CATEGORIAS_ATIVIDADE {
-        int id PK
-        varchar nome_categoria
-        text descricao
-    }
-    
-    ATIVIDADES {
-        int id PK
-        varchar nome_atividade
-        text descricao
-        boolean interna
-        boolean detran
-        int categoria_id FK
-        timestamp created_at
-        timestamp updated_at
-    }
-    
-    TIPOS_VEICULO {
-        int id PK
-        varchar nome_tipo
-        text descricao
-    }
-    
-    SITUACOES_VEICULO {
-        int id PK
-        varchar nome_situacao
-        text descricao
-    }
-    
-    ATIVIDADE_TIPO_VEICULO {
-        int atividade_id PK,FK
-        int tipo_veiculo_id PK,FK
-    }
-    
-    ATIVIDADE_SITUACAO_VEICULO {
-        int atividade_id PK,FK
-        int situacao_veiculo_id PK,FK
-    }
-
-    CATEGORIAS_ATIVIDADE ||--o{ ATIVIDADES : "possui"
-    ATIVIDADES }o--o{ TIPOS_VEICULO : "aplica_se_a"
-    ATIVIDADES }o--o{ SITUACOES_VEICULO : "relaciona_com"
-    ATIVIDADES }o--|| ATIVIDADE_TIPO_VEICULO : ""
-    ATIVIDADE_TIPO_VEICULO }o--|| TIPOS_VEICULO : ""
-    ATIVIDADES }o--|| ATIVIDADE_SITUACAO_VEICULO : ""
-    ATIVIDADE_SITUACAO_VEICULO }o--|| SITUACOES_VEICULO : ""
-```
-# Modelo 2. Entidade-Relacionamento - Sistema de Gestão de Despachante
+# Modelo 1. Entidade-Relacionamento - Sistema de Gestão de Despachante
 
 ```mermaid
 erDiagram
