@@ -57,8 +57,6 @@ Tabela 1. Requisitos internos da empresa e/ou que dependem do sistema do DETRAN.
 
 # 2.1 Descrição de Requisitos Funcionais do Sistema 
 
-# 2.1 Descrição de Requisitos Funcionais do Sistema
-
 | ID | Requisitos funcionais do sistema |
 |----|-----------------------------------|
 | 1 | O sistema deve permitir o cadastro do veículo com data de entrada, placa, modelo, nome, telefone, descrição, serviço e valor |
