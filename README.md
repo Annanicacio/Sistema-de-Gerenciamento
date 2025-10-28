@@ -76,7 +76,7 @@ Tabela 1. Requisitos internos da empresa e/ou que dependem do sistema do DETRAN.
 
 # 3. Diagramas
 
-# Modelo 1. Entidade-Relacionamento - Sistema de Gestão de Despachante
+# 3.1 Diagrama Entidade-Relacionamento - Sistema de Gestão de Despachante
 
 ```mermaid
 erDiagram
