@@ -81,7 +81,7 @@ Tabela 1. Requisitos internos da empresa e/ou que dependem do sistema do DETRAN.
 ```mermaid
 erDiagram
     CLIENTE {
-        int id PK
+        int cliente_id
         string nome
         string cpf 
         string telefone
@@ -89,7 +89,7 @@ erDiagram
     }
 
     VEICULO {
-        int id PK
+        int veiculo_id
         string placa
         string modelo
         string descricao
@@ -98,7 +98,7 @@ erDiagram
     }
 
     SERVICO {
-        int id PK
+        
         string tipo_servico
         decimal valor
         boolean pago
@@ -106,8 +106,19 @@ erDiagram
         datetime created_at
     }
 
+   PAGAMENTO {
+        int cliente_id FK
+        int veiculo_id FK
+        string tipo_servico
+        decimal valor
+        boolean pago
+        string forma_pagamento
+        int veiculo_id FK
+        datetime created_at
+    }
+
     VISTORIA {
-        int id PK
+        
         string tipo_vistoria
         datetime data_agendada
         datetime data_realizada
@@ -117,7 +128,7 @@ erDiagram
     }
 
     IPVA {
-        int id PK
+        
         int cliente_id FK
         int veiculo_id FK
         decimal valor_total
@@ -147,11 +158,11 @@ erDiagram
     }
 
     CLIENTE ||--o{ VEICULO : possui
-    CLIENTE ||--o{ IPVA : tem
+    VEICULO ||--o{ IPVA : tem
     VEICULO ||--o{ SERVICO : realiza
+    SERVIÇO ||--o{ PAGAMENTO : possui
     VEICULO ||--o{ VISTORIA : agenda
-    CLIENTE ||--o{ SINAL_PUBLICO : registra
-    CLIENTE ||--o{ PROCESSO_DEVOLVIDO : tem_processo
+    VEICULO ||--o{ PROCESSO : tem_processo
 ```
 
 
