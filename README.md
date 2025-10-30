@@ -160,7 +160,7 @@ erDiagram
     CLIENTE ||--o{ VEICULO : possui
     VEICULO ||--o{ IPVA : tem
     VEICULO ||--o{ SERVICO : realiza
-    SERVIÇO ||--o{ PAGAMENTO : possui
+    SERVICO ||--o{ PAGAMENTO : possui
     VEICULO ||--o{ VISTORIA : agenda
     VEICULO ||--o{ PROCESSO : tem_processo
 ```
