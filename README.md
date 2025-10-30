@@ -83,6 +83,7 @@ erDiagram
     CLIENTE {
         int id PK
         string nome
+        string cpf 
         string telefone
         datetime created_at
     }
@@ -126,8 +127,8 @@ erDiagram
         int mes_referencia
     }
 
-    LAMBERTE {
-        int id PK
+    LAMBRETE {
+        
         string placa
         string modelo
         string nome_cliente
@@ -135,20 +136,13 @@ erDiagram
         string descricao
     }
 
-    SINAL_PUBLICO {
-        int id PK
-        string placa
-        string veiculo
-        string nome_cliente
-        string numero
-        decimal valor
-    }
 
-    PROCESSO_DEVOLVIDO {
-        int id PK
+    PROCESSO {
+        
         string placa
         string modelo
         string nome_cliente
+        string status
         string motivo_devolucao
     }
 
