@@ -138,7 +138,7 @@ erDiagram
         int mes_referencia
     }
 
-    LAMBRETE {
+    LEMBRETE {
         
         string placa
         string modelo
