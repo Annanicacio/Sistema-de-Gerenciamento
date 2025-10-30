@@ -189,7 +189,7 @@ erDiagram
 - Controle de envio de parcelas mensais
 
 ### Entidades Auxiliares:
-- **LAMBERTE**: Controle de lambetes
+- **LEMBERTE**: Controle de lembretes
 - **PROCESSO**: Histórico do processos 
 
 
