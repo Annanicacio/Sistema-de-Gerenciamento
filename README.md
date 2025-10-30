@@ -169,7 +169,7 @@ erDiagram
 ## Descrição das Entidades:
 
 ### CLIENTE
-- Cadastro central de clientes com nome e telefone
+- Cadastro central de clientes com nome, cpf e telefone
 - Relaciona com veículos, IPVA, sinal público e processos devolvidos
 
 ### VEICULO
@@ -190,7 +190,6 @@ erDiagram
 
 ### Entidades Auxiliares:
 - **LAMBERTE**: Controle de lambetes
-- **SINAL_PUBLICO**: Registro de sinais públicos
-- **PROCESSO_DEVOLVIDO**: Histórico de processos devolvidos
-- **RELATORIO_MENSAL**: Relatórios financeiros mensais
+- **PROCESSO**: Histórico do processos 
+
 
