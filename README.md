@@ -95,6 +95,7 @@ erDiagram
         string descricao
         datetime data_entrada
         int cliente_id FK
+        int serviço_id FK
     }
 
     SERVICO {
@@ -113,7 +114,6 @@ erDiagram
         decimal valor
         boolean pago
         string forma_pagamento
-        int veiculo_id FK
         datetime created_at
     }
 
