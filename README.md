@@ -165,7 +165,7 @@ erDiagram
     VEICULO ||--o{ PROCESSO : tem_processo
 ```
 
-
+*mudar marcacao
 ## Descrição das Entidades:
 
 ### CLIENTE
@@ -190,6 +190,10 @@ erDiagram
 
 ### Entidades Auxiliares:
 - **LEMBERTE**: Controle de lembretes
-- **PROCESSO**: Histórico do processos 
+- **PROCESSO**: Histórico do processos
+
+## 3.2 Diagrama de Casos de Uso
+
+OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
 
