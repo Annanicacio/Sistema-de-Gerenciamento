@@ -89,7 +89,6 @@ erDiagram
     }
 
     VEICULO {
-        int veiculo_id
         string placa
         string modelo
         string descricao
@@ -99,22 +98,22 @@ erDiagram
     }
 
     SERVICO {
-        
+        id placa 
         string tipo_servico
         decimal valor
         boolean pago
         int veiculo_id FK
-        datetime created_at
+        datetime data_serviço
     }
 
    PAGAMENTO {
         int cliente_id FK
-        int veiculo_id FK
+        id placa FK
         string tipo_servico
         decimal valor
         boolean pago
-        string forma_pagamento
-        datetime created_at
+        string tipo_pagamento
+        datetime data_serviço
     }
 
     VISTORIA {
@@ -128,7 +127,7 @@ erDiagram
     }
 
     IPVA {
-        
+        id placa FK
         int cliente_id FK
         int veiculo_id FK
         decimal valor_total
@@ -149,12 +148,13 @@ erDiagram
 
 
     PROCESSO {
-        
+        id processo
         string placa
         string modelo
         string nome_cliente
         string status
         string motivo_devolucao
+        id serviço
     }
 
     CLIENTE ||--o{ VEICULO : possui
