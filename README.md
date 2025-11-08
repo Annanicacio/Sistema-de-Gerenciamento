@@ -199,7 +199,7 @@ Caso de uso 1. Cadastrar Veículo.
 ![caso de uso 1](https://github.com/user-attachments/assets/1d917769-541d-4962-ae28-52a3182c5e40)
 
 Ator Principal: Funcionário
-Descrição: Permite o cadastro do serviço com data de entrada, veículo, modelo, placa, nome do cliente, cpf, telefone, descrição, serviço e valor.
+Descrição: Permite o cadastro do serviço com data de entrada, veículo, placa, nome do cliente, cpf, telefone, descrição, serviço e valor.
 Pré-condições: O usuário deve estar autenticado no sistema.
 Fluxo Principal:
 1. O ator acessa a tela de cadastro de serviços.
@@ -207,6 +207,19 @@ Fluxo Principal:
 3. O ator preenche os campos.
 4. O sistema valida e grava o registro no banco de dados.
 Pós-condições: Serviço cadastrado com sucesso.
+
+Caso de uso 2. Registrar Vistoria do Veículo.
+
+<img width="271" height="191" alt="Caso de uso 2 drawio" src="https://github.com/user-attachments/assets/17a85b0e-2a61-4369-8061-258998298dcb" />
+
+Ator Principal: Funcionário
+Descrição: Registra o veículo, placa, data do agendamento da vistoria, colocar se é particular ou pelo Detran.
+Pré-condições: Veículo deve estar cadastrado.
+Fluxo Principal:
+1. O ator acessa a tela de vistorias.
+2. O ator preenche os campos.
+3. O sistema armazena as informações.
+Pós-condições: Vistoria vinculada ao veículo.
 
 
 OBS: OS casos de uso é dos 14 itens, prompt: plant uml
