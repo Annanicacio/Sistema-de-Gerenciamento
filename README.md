@@ -246,16 +246,10 @@ graph TB
             C8[GestaoFinanceira]
         end
         
-        subgraph PACOTE3 [Camada de Dados]
-            C9[BancoDados]
-            C10[RepositorioVeiculos]
-            C11[RepositorioVistorias]
-        end
-        
-        subgraph PACOTE4 [Utilitarios]
-            C12[Calendario]
-            C13[Buscas]
-            C14[Validacoes]
+        subgraph PACOTE3 [Utilitarios]
+            C9[Calendario]
+            C10[Buscas]
+            C11[Validacoes]
         end
     end
 
@@ -266,124 +260,31 @@ graph TB
     C1 --> C8
     
     C2 --> C5
-    C3 --> C14
-    C3 --> C13
+    C3 --> C11
+    C3 --> C10
     C4 --> C8
     
-    C5 --> C10
-    C6 --> C11
-    C7 --> C12
-    C8 --> C10
-    C8 --> C11
+    C5 --> C9
+    C6 --> C9
+    C7 --> C9
+    C8 --> C9
     
-    C10 --> C9
-    C11 --> C9
-    C13 --> C10
-    C13 --> C11
-    
-    C14 --> C5
-    C14 --> C6
+    C10 --> C5
+    C10 --> C6
+    C11 --> C5
+    C11 --> C6
 
     %% Estilizacao
     classDef presentation fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000000
     classDef business fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px,color:#000000
-    classDef data fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#000000
     classDef utils fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
     classDef package fill:#f5f5f5,stroke:#9e9e9e,stroke-width:1px,color:#000000
     
     class C1,C2,C3,C4 presentation
     class C5,C6,C7,C8 business
-    class C9,C10,C11 data
-    class C12,C13,C14 utils
-    class PACOTE1,PACOTE2,PACOTE3,PACOTE4 package
+    class C9,C10,C11 utils
+    class PACOTE1,PACOTE2,PACOTE3 package
 ```
-TelaPrincipal
-Responsabilidade: Interface inicial do sistema.
-Funcionalidades: Exibe tabela de prioridades do dia com veículos em atendimento.
-Navegação para outras funcionalidades.
-Requisitos Atendidos: RF8.
-
-CadastroVeiculos
-Responsabilidade: Interface para registro de veículos.
-Funcionalidades: Formulário completo de cadastro de veículos.
-Campos: data entrada, placa, modelo, nome, telefone, descrição, serviço, valor.
-Validação básica dos dados de entrada.
-Requisitos Atendidos: RF1.
-
-Consultas
-Responsabilidade: Mecanismo de busca e pesquisa.
-Funcionalidades: Busca por placa do veículo, busca por nome do cliente, busca por número de telefone.
-Filtros avançados de pesquisa.
-Requisitos Atendidos: RF9.
-
-Relatorios
-Responsabilidade: Geração e visualização de relatórios.
-Funcionalidades:Relatório mensal de serviços.
-Relatório financeiro.
-Exportação de dados.
-Requisitos Atendidos: RF7
-
-CAMADA DE NEGÓCIO 
-GestaoVeiculos
-Responsabilidade: Regras de negócio para veículos
-Funcionalidades: Validação de regras de cadastro
-Agrupamento de veículos por mês
-Gestão de processos devolvidos
-Controle de fluxo de veículos
-Requisitos Atendidos: RF1, RF6, RF13
-
-GestaoVistorias
-Responsabilidade: Controle de vistorias e prazos
-Funcionalidades: Registro de vistorias do DETRAN
-Registro de vistorias terceirizadas
-Controle de prazos e vencimentos
-Histórico de vistorias
-Requisitos Atendidos: RF2, RF3
-
-SistemaLembretes
-Responsabilidade: Gestão de alertas e notificações
-Funcionalidades: Lembretes de vistorias próximas do vencimento
-Lembretes personalizados
-Sistema de notificações
-Alertas proativos
-Requisitos Atendidos: RF4, RF5
-
-Gestao Financeira
-Responsabilidade: Controle financeiro e monetário
-Funcionalidades: Gestão de parcelamento de IPVA
-Controle de sinal público
-Situação de pagamentos
-Relatórios financeiros
-Requisitos Atendidos: RF7, RF10, RF11, RF12, RF14
-
-Utilitários (Serviços de Apoio)
-Calendario
-Responsabilidade: Controle de datas e prazos
-Funcionalidades: Cálculo de vencimentos
-Alertas temporais
-Controle de feriados
-
-Buscas
-Responsabilidade: Mecanismo de pesquisa
-Funcionalidades: Indexação de dados
-Buscas otimizadas
-Filtros complexos
-
-Validacoes
-Responsabilidade: Validação de dados
-Funcionalidades:
-Validação de formatos
-Regras de negócio aplicadas
-Consistência de dados
-
-
- CONVENÇÕES VISUAIS
- 
-🔵 Azul: Componentes de apresentação (interface)
-🟢 Verde: Componentes de negócio (lógica)
-🔴 Rosa: Componentes de dados (persistência)
-🟠 Laranja: Componentes utilitários (serviços)
-⚫ Cinza: Pacotes/agrupamentos lógicos
 
 ## 4. Telas 
 
