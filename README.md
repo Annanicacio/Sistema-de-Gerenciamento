@@ -228,6 +228,9 @@ OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
 Esse diagrama é dos componentes que formam o sistema. 
 
+# Diagrama de Componentes
+
+```mermaid
 graph TB
     %% Pacotes/Modules principais
     subgraph "Sistema de Gestao Veicular"
@@ -295,6 +298,7 @@ graph TB
     class C9,C10,C11 data
     class C12,C13,C14 utils
     class PACOTE1,PACOTE2,PACOTE3,PACOTE4 package
+```
 
 
 TelaPrincipal
