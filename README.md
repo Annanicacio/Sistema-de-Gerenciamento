@@ -228,8 +228,6 @@ OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
 Esse diagrama é dos componentes que formam o sistema. 
 
-# Diagrama de Componentes
-
 ```mermaid
 graph TB
     %% Pacotes/Modules principais
@@ -287,11 +285,11 @@ graph TB
     C14 --> C6
 
     %% Estilizacao
-    classDef presentation fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
-    classDef business fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    classDef data fill:#fce4ec,stroke:#c2185b,stroke-width:2px
-    classDef utils fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    classDef package fill:#f5f5f5,stroke:#9e9e9e,stroke-width:1px
+    classDef presentation fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000000
+    classDef business fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px,color:#000000
+    classDef data fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#000000
+    classDef utils fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
+    classDef package fill:#f5f5f5,stroke:#9e9e9e,stroke-width:1px,color:#000000
     
     class C1,C2,C3,C4 presentation
     class C5,C6,C7,C8 business
@@ -299,8 +297,6 @@ graph TB
     class C12,C13,C14 utils
     class PACOTE1,PACOTE2,PACOTE3,PACOTE4 package
 ```
-
-
 TelaPrincipal
 Responsabilidade: Interface inicial do sistema.
 Funcionalidades: Exibe tabela de prioridades do dia com veículos em atendimento.
