@@ -226,6 +226,165 @@ OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
 ##3.3 Diagrama de Componentes 
 
+Esse diagrama é dos componentes que formam o sistema. 
+
+graph TB
+    %% Pacotes/Modules principais
+    subgraph "Sistema de Gestão de Despachante"
+        subgraph PACOTE1 [Camada de Apresentação]
+            C1[Componente: TelaPrincipal]
+            C2[Componente: CadastroVeiculos]
+            C3[Componente: Consultas]
+            C4[Componente: Relatorios]
+        end
+        
+        subgraph PACOTE2 [Camada de Negócio]
+            C5[Componente: GestaoVeiculos]
+            C6[Componente: GestaoVistorias]
+            C7[Componente: SistemaLembretes]
+            C8[Componente: GestaoFinanceira]
+        end
+        
+        subgraph PACOTE3 [Camada de Dados]
+            C9[Componente: BancoDados]
+            C10[Componente: RepositorioVeiculos]
+            C11[Componente: RepositorioVistorias]
+        end
+        
+        subgraph PACOTE4 [Utilitários]
+            C12[Componente: Calendario]
+            C13[Componente: Buscas]
+            C14[Componente: Validacoes]
+        end
+    end
+
+    %% Dependências entre componentes
+    C1 --> C5
+    C1 --> C6
+    C1 --> C7
+    C1 --> C8
+    
+    C2 --> C5
+    C3 --> C14
+    C3 --> C13
+    C4 --> C8
+    
+    C5 --> C10
+    C6 --> C11
+    C7 --> C12
+    C8 --> C10
+    C8 --> C11
+    
+    C10 --> C9
+    C11 --> C9
+    C13 --> C10
+    C13 --> C11
+    
+    C14 --> C5
+    C14 --> C6
+
+    %% Estilização
+    classDef presentation fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    classDef business fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    classDef data fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef utils fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    classDef package fill:#f5f5f5,stroke:#9e9e9e,stroke-width:1px
+    
+    class C1,C2,C3,C4 presentation
+    class C5,C6,C7,C8 business
+    class C9,C10,C11 data
+    class C12,C13,C14 utils
+    class PACOTE1,PACOTE2,PACOTE3,PACOTE4 package
+
+    CAMADA DE APRESENTAÇÃO (Interface do Usuário)
+TelaPrincipal
+Responsabilidade: Interface inicial do sistema
+Funcionalidades: Exibe tabela de prioridades do dia com veículos em atendimento
+Navegação para outras funcionalidades
+Requisitos Atendidos: RF8
+
+CadastroVeiculos
+Responsabilidade: Interface para registro de veículos
+Funcionalidades: Formulário completo de cadastro de veículos
+Campos: data entrada, placa, modelo, nome, telefone, descrição, serviço, valor
+Validação básica dos dados de entrada
+Requisitos Atendidos: RF1
+
+Consultas
+Responsabilidade: Mecanismo de busca e pesquisa
+Funcionalidades: Busca por placa do veículo, busca por nome do cliente, busca por número de telefone
+Filtros avançados de pesquisa
+Requisitos Atendidos: RF9
+
+Relatorios
+Responsabilidade: Geração e visualização de relatórios
+Funcionalidades:Relatório mensal de serviços
+Relatório financeiro
+Exportação de dados
+Requisitos Atendidos: RF7
+
+CAMADA DE NEGÓCIO 
+GestaoVeiculos
+Responsabilidade: Regras de negócio para veículos
+Funcionalidades: Validação de regras de cadastro
+Agrupamento de veículos por mês
+Gestão de processos devolvidos
+Controle de fluxo de veículos
+Requisitos Atendidos: RF1, RF6, RF13
+
+GestaoVistorias
+Responsabilidade: Controle de vistorias e prazos
+Funcionalidades: Registro de vistorias do DETRAN
+Registro de vistorias terceirizadas
+Controle de prazos e vencimentos
+Histórico de vistorias
+Requisitos Atendidos: RF2, RF3
+
+SistemaLembretes
+Responsabilidade: Gestão de alertas e notificações
+Funcionalidades: Lembretes de vistorias próximas do vencimento
+Lembretes personalizados
+Sistema de notificações
+Alertas proativos
+Requisitos Atendidos: RF4, RF5
+
+Gestao Financeira
+Responsabilidade: Controle financeiro e monetário
+Funcionalidades: Gestão de parcelamento de IPVA
+Controle de sinal público
+Situação de pagamentos
+Relatórios financeiros
+Requisitos Atendidos: RF7, RF10, RF11, RF12, RF14
+
+Utilitários (Serviços de Apoio)
+Calendario
+Responsabilidade: Controle de datas e prazos
+Funcionalidades: Cálculo de vencimentos
+Alertas temporais
+Controle de feriados
+
+Buscas
+Responsabilidade: Mecanismo de pesquisa
+Funcionalidades: Indexação de dados
+Buscas otimizadas
+Filtros complexos
+
+Validacoes
+Responsabilidade: Validação de dados
+Funcionalidades:
+Validação de formatos
+Regras de negócio aplicadas
+Consistência de dados
+
+
+ CONVENÇÕES VISUAIS
+ 
+🔵 Azul: Componentes de apresentação (interface)
+🟢 Verde: Componentes de negócio (lógica)
+🔴 Rosa: Componentes de dados (persistência)
+🟠 Laranja: Componentes utilitários (serviços)
+⚫ Cinza: Pacotes/agrupamentos lógicos
+
 ## 4. Telas 
 
 
