@@ -194,6 +194,21 @@ erDiagram
 
 ## 3.2 Diagrama de Casos de Uso
 
+Caso de uso 1. Cadastrar Veículo.
+
+![caso de uso 1](https://github.com/user-attachments/assets/1d917769-541d-4962-ae28-52a3182c5e40)
+
+Ator Principal: Funcionário
+Descrição: Permite o cadastro do serviço com data de entrada, veículo, modelo, placa, nome do cliente, cpf, telefone, descrição, serviço e valor.
+Pré-condições: O usuário deve estar autenticado no sistema.
+Fluxo Principal:
+1. O ator acessa a tela de cadastro de serviços.
+2. O sistema solicita os dados obrigatórios.
+3. O ator preenche os campos.
+4. O sistema valida e grava o registro no banco de dados.
+Pós-condições: Serviço cadastrado com sucesso.
+
+
 OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
 ##3.3 Diagrama de Componentes 
