@@ -230,35 +230,35 @@ Esse diagrama é dos componentes que formam o sistema.
 
 graph TB
     %% Pacotes/Modules principais
-    subgraph "Sistema de Gestão de Despachante"
-        subgraph PACOTE1 [Camada de Apresentação]
-            C1[Componente: TelaPrincipal]
-            C2[Componente: CadastroVeiculos]
-            C3[Componente: Consultas]
-            C4[Componente: Relatorios]
+    subgraph "Sistema de Gestao Veicular"
+        subgraph PACOTE1 [Camada de Apresentacao]
+            C1[TelaPrincipal]
+            C2[CadastroVeiculos]
+            C3[Consultas]
+            C4[Relatorios]
         end
         
-        subgraph PACOTE2 [Camada de Negócio]
-            C5[Componente: GestaoVeiculos]
-            C6[Componente: GestaoVistorias]
-            C7[Componente: SistemaLembretes]
-            C8[Componente: GestaoFinanceira]
+        subgraph PACOTE2 [Camada de Negocio]
+            C5[GestaoVeiculos]
+            C6[GestaoVistorias]
+            C7[SistemaLembretes]
+            C8[GestaoFinanceira]
         end
         
         subgraph PACOTE3 [Camada de Dados]
-            C9[Componente: BancoDados]
-            C10[Componente: RepositorioVeiculos]
-            C11[Componente: RepositorioVistorias]
+            C9[BancoDados]
+            C10[RepositorioVeiculos]
+            C11[RepositorioVistorias]
         end
         
-        subgraph PACOTE4 [Utilitários]
-            C12[Componente: Calendario]
-            C13[Componente: Buscas]
-            C14[Componente: Validacoes]
+        subgraph PACOTE4 [Utilitarios]
+            C12[Calendario]
+            C13[Buscas]
+            C14[Validacoes]
         end
     end
 
-    %% Dependências entre componentes
+    %% Dependencias entre componentes
     C1 --> C5
     C1 --> C6
     C1 --> C7
@@ -283,7 +283,7 @@ graph TB
     C14 --> C5
     C14 --> C6
 
-    %% Estilização
+    %% Estilizacao
     classDef presentation fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
     classDef business fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
     classDef data fill:#fce4ec,stroke:#c2185b,stroke-width:2px
@@ -296,31 +296,31 @@ graph TB
     class C12,C13,C14 utils
     class PACOTE1,PACOTE2,PACOTE3,PACOTE4 package
 
-    CAMADA DE APRESENTAÇÃO (Interface do Usuário)
+
 TelaPrincipal
-Responsabilidade: Interface inicial do sistema
-Funcionalidades: Exibe tabela de prioridades do dia com veículos em atendimento
-Navegação para outras funcionalidades
-Requisitos Atendidos: RF8
+Responsabilidade: Interface inicial do sistema.
+Funcionalidades: Exibe tabela de prioridades do dia com veículos em atendimento.
+Navegação para outras funcionalidades.
+Requisitos Atendidos: RF8.
 
 CadastroVeiculos
-Responsabilidade: Interface para registro de veículos
-Funcionalidades: Formulário completo de cadastro de veículos
-Campos: data entrada, placa, modelo, nome, telefone, descrição, serviço, valor
-Validação básica dos dados de entrada
-Requisitos Atendidos: RF1
+Responsabilidade: Interface para registro de veículos.
+Funcionalidades: Formulário completo de cadastro de veículos.
+Campos: data entrada, placa, modelo, nome, telefone, descrição, serviço, valor.
+Validação básica dos dados de entrada.
+Requisitos Atendidos: RF1.
 
 Consultas
-Responsabilidade: Mecanismo de busca e pesquisa
-Funcionalidades: Busca por placa do veículo, busca por nome do cliente, busca por número de telefone
-Filtros avançados de pesquisa
-Requisitos Atendidos: RF9
+Responsabilidade: Mecanismo de busca e pesquisa.
+Funcionalidades: Busca por placa do veículo, busca por nome do cliente, busca por número de telefone.
+Filtros avançados de pesquisa.
+Requisitos Atendidos: RF9.
 
 Relatorios
-Responsabilidade: Geração e visualização de relatórios
-Funcionalidades:Relatório mensal de serviços
-Relatório financeiro
-Exportação de dados
+Responsabilidade: Geração e visualização de relatórios.
+Funcionalidades:Relatório mensal de serviços.
+Relatório financeiro.
+Exportação de dados.
 Requisitos Atendidos: RF7
 
 CAMADA DE NEGÓCIO 
