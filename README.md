@@ -63,7 +63,7 @@ Tabela 1. Requisitos internos da empresa e/ou que dependem do sistema do DETRAN.
 | 2 | O sistema deve registrar data de vistorias que serão ou já foram feitas pelo detran |
 | 3 | O sistema deve registrar vistorias que serão ou já foram feitas por uma empresa terceirizada |
 | 4 | O sistema deve colocar um lembrete de vistorias que estão próximas para fazer ou vencer |
-| 5 | O sistema deve ter um campo para adicionar lembertes, o qual conterá: placa, modelo, nome do cliente, numero e uma descrição |
+| 5 | O sistema deve ter um campo para adicionar lembretes, o qual conterá: placa, modelo, nome do cliente, numero e uma descrição |
 | 6 | O sistema deve agrupar os veículos pelo mês |
 | 7 | O sistema deve gerar um relatório de serviços do mês, o qual conterá placa, modelo, serviço, valor e nome do cliente para fins financeiros |
 | 8 | O sistema deve ter na tela principal uma tabela de prioridades do dia, a qual conterá informações da data de entrada, placa, modelo, nome do cliente, telefone, descrição, serviço e valor |
