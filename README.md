@@ -221,6 +221,47 @@ Fluxo Principal:
 3. O sistema armazena as informações.
 Pós-condições: Vistoria vinculada ao veículo.
 
+Caso de uso 3. Registrar um lembrete. 
+
+<img width="271" height="191" alt="caso de uso 3 drawio" src="https://github.com/user-attachments/assets/c953a284-4d5f-4c36-8957-1ed0580a6fad" />
+
+Ator Principal: Funcionário.
+Descrição: Permite criar lembretes personalizados.
+Pré-condições: Sistema acessível e veículo cadastrado.
+Fluxo Principal:
+1. O ator acessa a área de lembretes.
+2. Insere placa, modelo, nome do cliente, número e descrição.
+3. O sistema salva o lembrete.
+Pós-condições: Lembrete registrado.
+
+Caso de uso 4. Gerar relatório.
+
+<img width="256" height="191" alt="caso de uso 4 drawio" src="https://github.com/user-attachments/assets/33204e41-2054-4038-a017-28f82532f5a5" />
+
+Ator Principal: Administrador / Financeiro
+Descrição: Gera relatório mensal com placa, modelo, serviço, valor e nome do cliente.
+Pré-condições: Serviços registrados.
+Fluxo Principal:
+1. O ator escolhe o mês.
+2. O sistema compila os dados e gera o relatório.
+Pós-condições: Relatório exibido ou exportado.
+
+Caso de uso 5. Consultar Dados. 
+
+<img width="257" height="191" alt="caso de uso 5 drawio" src="https://github.com/user-attachments/assets/c9da1150-3fbf-4286-af8b-9df5141365a4" />
+
+Ator Principal: Funcionário
+Descrição: Permite consultas por placa, nome, ou tipo de serviço.
+Pré-condições: Registros cadastrados.
+Fluxo Principal:
+1. O ator digita um critério de busca.
+2. O sistema retorna os resultados.
+Pós-condições: Informações do veículo exibidas.
+
+Caso de uso 6. Acompanhar parcelamento de IPVA. 
+
+<img width="489" height="341" alt="image" src="https://github.com/user-attachments/assets/9e4ce5d5-5d65-4916-b605-485a852bf852" />
+
 
 OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
