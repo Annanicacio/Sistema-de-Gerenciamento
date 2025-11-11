@@ -260,8 +260,13 @@ Pós-condições: Informações do veículo exibidas.
 
 Caso de uso 6. Acompanhar parcelamento de IPVA. 
 
-<img width="489" height="341" alt="image" src="https://github.com/user-attachments/assets/9e4ce5d5-5d65-4916-b605-485a852bf852" />
+<img width="257" height="191" alt="caso de uso 6 drawio" src="https://github.com/user-attachments/assets/9c35d485-5ed0-40fe-a496-431309ea73f3" />
 
+Ator Principal: Funcionário
+Descrição: Mostra tabela com nome, telefone, placa, modelo, valor do IPVA, quantidade de parcelas e valor de cada uma.
+Pré-condições: Clientes e veículos cadastrados.
+Fluxo Principal: O ator acessa o módulo de IPVA.
+Pós-condições: Tabela exibida com parcelas registradas.
 
 OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
