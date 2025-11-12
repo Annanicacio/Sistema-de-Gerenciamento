@@ -197,7 +197,7 @@ erDiagram
 
 ## 3.2 Diagrama de Casos de Uso
 
-Caso de uso 1. Cadastrar Veículo.
+Caso de uso 1. Cadastrar Serviço.
 
 ![caso de uso 1](https://github.com/user-attachments/assets/1d917769-541d-4962-ae28-52a3182c5e40)
 
@@ -224,7 +224,21 @@ Fluxo Principal:
 3. O sistema armazena as informações.
 Pós-condições: Vistoria vinculada ao veículo.
 
-Caso de uso 3. Registrar um lembrete. 
+Caso de uso 3. Gerenciar Vistoria. 
+
+<img width="257" height="191" alt="diagramaa drawio" src="https://github.com/user-attachments/assets/7e4ec290-57ed-46ca-aeaa-af145dc512fd" />
+
+Ator Principal: Funcionário.
+Descrição: Após o registro de uma data de vistoria, o funcionário acompanha se já está feita ou está para vencer.
+Pré-condições: Vistoria deve estar cadastrada.
+Fluxo Principal:
+1. O ator acessa a tela de vistorias.
+2. O ator visualiza e pode selecionar "feito" ou "vencimento próximo".
+3. O sistema armazena as informações.
+Pós-condições: Vistoria vinculada ao veículo.
+
+
+Caso de uso 4. Registrar um lembrete. 
 
 <img width="271" height="191" alt="caso de uso 3 drawio" src="https://github.com/user-attachments/assets/c953a284-4d5f-4c36-8957-1ed0580a6fad" />
 
@@ -237,7 +251,7 @@ Fluxo Principal:
 3. O sistema salva o lembrete.
 Pós-condições: Lembrete registrado.
 
-Caso de uso 4. Gerar relatório.
+Caso de uso 5. Gerar relatório.
 
 <img width="256" height="191" alt="caso de uso 4 drawio" src="https://github.com/user-attachments/assets/33204e41-2054-4038-a017-28f82532f5a5" />
 
@@ -249,7 +263,7 @@ Fluxo Principal:
 2. O sistema compila os dados e gera o relatório.
 Pós-condições: Relatório exibido ou exportado.
 
-Caso de uso 5. Consultar Dados. 
+Caso de uso 6. Consultar Dados. 
 
 <img width="257" height="191" alt="caso de uso 5 drawio" src="https://github.com/user-attachments/assets/c9da1150-3fbf-4286-af8b-9df5141365a4" />
 
@@ -261,7 +275,7 @@ Fluxo Principal:
 2. O sistema retorna os resultados.
 Pós-condições: Informações do veículo exibidas.
 
-Caso de uso 6. Acompanhar parcelamento de IPVA. 
+Caso de uso 7. Acompanhar parcelamento de IPVA. 
 
 <img width="257" height="191" alt="caso de uso 6 drawio" src="https://github.com/user-attachments/assets/9c35d485-5ed0-40fe-a496-431309ea73f3" />
 
@@ -271,7 +285,7 @@ Pré-condições: Clientes e veículos cadastrados.
 Fluxo Principal: O ator acessa o módulo de IPVA.
 Pós-condições: Tabela exibida com parcelas registradas.
 
-Caso de uso 7. Registrar envio de parcela.
+Caso de uso 8. Registrar envio de parcela.
 
 <img width="257" height="191" alt="caso de uso 7 drawio (1)" src="https://github.com/user-attachments/assets/ada0defa-00b9-4fbd-a473-4966175570ae" />
 
@@ -285,7 +299,7 @@ Fluxo Principal:
 4. O sistema marca como “enviado”.
 Pós-condições: Situação da parcela atualizada no sistema.
 
-Caso de uso 8. Gerenciar processos devolvidos.
+Caso de uso 9. Gerenciar processos devolvidos.
 
 <img width="256" height="191" alt="caso de uso 8 drawio" src="https://github.com/user-attachments/assets/c9f3ac59-9deb-4b40-9613-c6234a3acc40" />
 
@@ -295,7 +309,7 @@ Pré-condições: cadastro do veículo no sistema.
 Fluxo Principal: Ator acessa o módulo de devoluções e pode cadastrar um processo devolvido, editar, remover.
 Pós-condições: Dados exibidos.
 
-Caso de uso 9. Registrar pagamento do serviço.
+Caso de uso 10. Registrar pagamento do serviço.
 
 <img width="256" height="191" alt="caso de uso 9 drawio" src="https://github.com/user-attachments/assets/d1bd6a55-ee31-44c9-ac68-b5be9b0b1b84" />
 
@@ -308,7 +322,7 @@ Fluxo Principal:
 3. O sistema grava a alteração.
 Pós-condições: Situação financeira atualizada.
 
-Caso de uso 10. Acessar os serviços do mês.
+Caso de uso 11. Acessar os serviços do mês.
 
 <img width="257" height="191" alt="caso de uso 9 drawio (1)" src="https://github.com/user-attachments/assets/e3134408-1767-49eb-99e0-67bb178ec940" />
 
@@ -320,7 +334,7 @@ Fluxo Principal:
 2. O sistema exibe os serviços organizados por mês.
 Pós-condições: Serviços exibidos.
 
-Caso de uso 11. Cadastrar prioridades do dia. 
+Caso de uso 12. Cadastrar prioridades do dia. 
 
 <img width="257" height="191" alt="diagrama 11 drawio" src="https://github.com/user-attachments/assets/30b53702-7543-40b6-a362-b675916ddcd2" />
 
@@ -333,7 +347,7 @@ Fluxo Principal:
 3. O sistema salva o cadastro.
 Pós-condições: Tela inicial possui mais um cadastro de prioridades.
 
-Caso de uso 12. Cadastrar sinal público. 
+Caso de uso 13. Cadastrar sinal público. 
 
 <img width="257" height="191" alt="diagrama 12 drawio" src="https://github.com/user-attachments/assets/9041e34e-0119-4868-ab5f-6e92658f3df7" />
 
@@ -346,14 +360,25 @@ Fluxo Principal:
 3. O sistema salva o cadastro.
 Pós-condições: Serviço de sinal público é adicionado a um veículo.
 
-Caso de uso 13. 
+Caso de uso 14. Cadastrar finalização de serviço. 
+
+<img width="257" height="191" alt="diagramaaa drawio" src="https://github.com/user-attachments/assets/6ef93620-ef3a-448b-be56-f8e9a6b30e22" />
+
+Ator Principal: Funcionário.
+Descrição: O funcionário acessa o serviço e marca como finalizado.
+Pré-condições: Serviço cadastrado.
+Fluxo Principal:
+1. O ator acessa a tela de serviços.
+2. Seleciona a opção "finalizado". 
+3. O sistema atualiza a tela inicial.
+Pós-condições: O serviço sai da tela de prioridades e fica registrado no mês em que foi realizado..
 
 
 OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
 ##3.3 Diagrama de Componentes 
 
-Esse diagrama é dos componentes que formam o sistema. 
+O diagrama a seguir é referente aos componentes que formam o sistema. 
 
 ```mermaid
 graph TB
