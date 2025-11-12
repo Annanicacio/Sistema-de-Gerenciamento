@@ -268,6 +268,22 @@ Pré-condições: Clientes e veículos cadastrados.
 Fluxo Principal: O ator acessa o módulo de IPVA.
 Pós-condições: Tabela exibida com parcelas registradas.
 
+Caso de uso 7. Registrar envio de parcela.
+
+<img width="257" height="191" alt="caso de uso 7 drawio (1)" src="https://github.com/user-attachments/assets/ada0defa-00b9-4fbd-a473-4966175570ae" />
+
+Ator Principal: Atendente.
+Descrição: Permite selecionar uma parcela de IPVA e marcar como enviada.
+Pré-condições: Parcelas registradas.
+Fluxo Principal:
+1. O ator acessa a tabela de IPVA.
+2. Seleciona a parcela.
+3.Clica no botão de envio.
+4. O sistema marca como “enviado”.
+Pós-condições: Situação da parcela atualizada no sistema.
+
+Caso de uso 8. 
+
 OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
 ##3.3 Diagrama de Componentes 
