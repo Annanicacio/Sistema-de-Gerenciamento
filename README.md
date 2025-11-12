@@ -437,6 +437,78 @@ graph TB
     class C9,C10,C11 utils
     class PACOTE1,PACOTE2,PACOTE3 package
 ```
+teste 
+
+``` mermaid 
+
+%% Diagrama de Componentes do Sistema de Gestão de Vistorias e IPVA
+%% Autor: Anna Carolina
+%% Notação UML com interfaces (bolinhas e conectores)
+
+flowchart TB
+
+%% ===============================
+%% CAMADA DE INTERFACE DO USUÁRIO
+%% ===============================
+subgraph UI["<<Camada>> Interface do Usuário"]
+    UI_Prioridades["<b>Componente:</b><br>Tela Principal / Tabela de Prioridades"]
+    UI_Cadastro["<b>Componente:</b><br>Formulário de Cadastro de Veículo e Cliente"]
+    UI_Relatorios["<b>Componente:</b><br>Tela de Relatórios"]
+    UI_Lembretes["<b>Componente:</b><br>Tela de Lembretes"]
+end
+
+%% ===============================
+%% CAMADA DE BACKEND / NEGÓCIO
+%% ===============================
+subgraph Backend["<<Camada>> Lógica de Negócio"]
+    C_Cadastro["<b>Componente:</b><br>Cadastro"]
+    C_Vistorias["<b>Componente:</b><br>Gestão de Vistorias"]
+    C_Relatorios["<b>Componente:</b><br>Relatórios e Agrupamentos"]
+    C_Financeiro["<b>Componente:</b><br>Financeiro / IPVA / Pagamentos"]
+    C_SinalPublico["<b>Componente:</b><br>Sinal Público e Processos Devolvidos"]
+    C_Notificacoes["<b>Componente:</b><br>Notificações e Lembretes"]
+end
+
+%% ===============================
+%% RECURSO EXTERNO (BANCO DE DADOS)
+%% ===============================
+DB[("<<database>> Sistema de Armazenamento de Dados")]
+
+%% ===============================
+%% CONEXÕES COM INTERFACES
+%% ===============================
+
+%% Interface do usuário conecta-se ao backend
+UI_Prioridades o--o C_Cadastro
+UI_Cadastro o--o C_Cadastro
+UI_Relatorios o--o C_Relatorios
+UI_Lembretes o--o C_Notificacoes
+
+%% Relacionamentos entre componentes internos
+C_Cadastro o--o C_Vistorias
+C_Vistorias o--o C_Notificacoes
+C_Financeiro o--o C_Relatorios
+C_SinalPublico o--o C_Relatorios
+
+%% Dependência do backend com o banco de dados
+C_Cadastro -.-> DB
+C_Vistorias -.-> DB
+C_Relatorios -.-> DB
+C_Financeiro -.-> DB
+C_SinalPublico -.-> DB
+C_Notificacoes -.-> DB
+
+%% ===============================
+%% LEGENDAS (opcional)
+%% ===============================
+classDef camada fill:#eaf6ff,stroke:#4b8ed3,stroke-width:1px,color:#000
+classDef backend fill:#fff7e6,stroke:#f0a500,stroke-width:1px,color:#000
+classDef db fill:#e9f7ef,stroke:#2e8b57,stroke-width:1px,color:#000
+
+class UI camada
+class Backend backend
+class DB db
+```
 
 ## 4. Telas 
 
