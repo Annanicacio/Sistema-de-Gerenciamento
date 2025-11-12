@@ -198,7 +198,7 @@ Caso de uso 1. Cadastrar Veículo.
 
 ![caso de uso 1](https://github.com/user-attachments/assets/1d917769-541d-4962-ae28-52a3182c5e40)
 
-Ator Principal: Funcionário
+Ator Principal: Funcionário.
 Descrição: Permite o cadastro do serviço com data de entrada, veículo, placa, nome do cliente, cpf, telefone, descrição, serviço e valor.
 Pré-condições: O usuário deve estar autenticado no sistema.
 Fluxo Principal:
@@ -212,7 +212,7 @@ Caso de uso 2. Registrar Vistoria do Veículo.
 
 <img width="271" height="191" alt="Caso de uso 2 drawio" src="https://github.com/user-attachments/assets/17a85b0e-2a61-4369-8061-258998298dcb" />
 
-Ator Principal: Funcionário
+Ator Principal: Funcionário.
 Descrição: Registra o veículo, placa, data do agendamento da vistoria, colocar se é particular ou pelo Detran.
 Pré-condições: Veículo deve estar cadastrado.
 Fluxo Principal:
@@ -238,7 +238,7 @@ Caso de uso 4. Gerar relatório.
 
 <img width="256" height="191" alt="caso de uso 4 drawio" src="https://github.com/user-attachments/assets/33204e41-2054-4038-a017-28f82532f5a5" />
 
-Ator Principal: Administrador / Financeiro
+Ator Principal: Gerente.
 Descrição: Gera relatório mensal com placa, modelo, serviço, valor e nome do cliente.
 Pré-condições: Serviços registrados.
 Fluxo Principal:
@@ -272,7 +272,7 @@ Caso de uso 7. Registrar envio de parcela.
 
 <img width="257" height="191" alt="caso de uso 7 drawio (1)" src="https://github.com/user-attachments/assets/ada0defa-00b9-4fbd-a473-4966175570ae" />
 
-Ator Principal: Atendente.
+Ator Principal: Funcionário.
 Descrição: Permite selecionar uma parcela de IPVA e marcar como enviada.
 Pré-condições: Parcelas registradas.
 Fluxo Principal:
@@ -282,7 +282,69 @@ Fluxo Principal:
 4. O sistema marca como “enviado”.
 Pós-condições: Situação da parcela atualizada no sistema.
 
-Caso de uso 8. 
+Caso de uso 8. Gerenciar processos devolvidos.
+
+<img width="256" height="191" alt="caso de uso 8 drawio" src="https://github.com/user-attachments/assets/c9f3ac59-9deb-4b40-9613-c6234a3acc40" />
+
+Ator Principal: Gerente.
+Descrição: Mostra tabela de processos devolvidos com placa, modelo, cliente e motivo.
+Pré-condições: cadastro do veículo no sistema.
+Fluxo Principal: Ator acessa o módulo de devoluções e pode cadastrar um processo devolvido, editar, remover.
+Pós-condições: Dados exibidos.
+
+Caso de uso 9. Registrar pagamento do serviço.
+
+<img width="256" height="191" alt="caso de uso 9 drawio" src="https://github.com/user-attachments/assets/d1bd6a55-ee31-44c9-ac68-b5be9b0b1b84" />
+
+Ator Principal: Financeiro. 
+Descrição: Permite registrar a situação (pago, pendente, atrasado) do pagamento de serviço.
+Pré-condições: Serviço cadastrado.
+Fluxo Principal:
+1. O ator acessa o serviço.
+2. Atualiza o status de pagamento.
+3. O sistema grava a alteração.
+Pós-condições: Situação financeira atualizada.
+
+Caso de uso 10. Acessar os serviços do mês.
+
+<img width="257" height="191" alt="caso de uso 9 drawio (1)" src="https://github.com/user-attachments/assets/e3134408-1767-49eb-99e0-67bb178ec940" />
+
+Ator principal: Funcionário.
+Descrição: Permite acessar todos os serviços daquele mês, bem como os de meses anteriores. 
+Pré-condições: Serviços cadastrados.
+Fluxo Principal:
+1. O ator acessa o mês desejado.
+2. O sistema exibe os serviços organizados por mês.
+Pós-condições: Serviços exibidos.
+
+Caso de uso 11. Cadastrar prioridades do dia. 
+
+<img width="257" height="191" alt="diagrama 11 drawio" src="https://github.com/user-attachments/assets/30b53702-7543-40b6-a362-b675916ddcd2" />
+
+Ator Principal: Funcionário.
+Descrição: Permite cadastrar na tela principal as prioridades que se deseja acompanhar.
+Pré-condições: Sistema acessível e serviços cadastrados.
+Fluxo Principal:
+1. O ator acessa a tela principal.
+2. Adiciona na lista de prioridades o serviço já cadastrado que se deseja priorizar. 
+3. O sistema salva o cadastro.
+Pós-condições: Tela inicial possui mais um cadastro de prioridades.
+
+Caso de uso 12. Cadastrar sinal público. 
+
+<img width="257" height="191" alt="diagrama 12 drawio" src="https://github.com/user-attachments/assets/9041e34e-0119-4868-ab5f-6e92658f3df7" />
+
+Ator Principal: Funcionário.
+Descrição: Permite adicionar o serviço sinal publico a um veículo.
+Pré-condições: Sistema acessível e veículo cadastrado.
+Fluxo Principal:
+1. O ator acessa a tela de veículos.
+2. Adiciona em um veículo o serviço de sinal público. 
+3. O sistema salva o cadastro.
+Pós-condições: Serviço de sinal público é adicionado a um veículo.
+
+Caso de uso 13. 
+
 
 OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
