@@ -380,65 +380,6 @@ OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
 O diagrama a seguir é referente aos componentes que formam o sistema, possui o objetivo de demonstrar a organização modular do sistema, destacando como os principais componentes interagem entre si e com recursos externos.
 
-```mermaid
-graph TB
-    %% Pacotes/Modules principais
-    subgraph "Sistema de Gestao Veicular"
-        subgraph PACOTE1 [Camada de Apresentacao]
-            C1[TelaPrincipal]
-            C2[CadastroVeiculos]
-            C3[Consultas]
-            C4[Relatorios]
-        end
-        
-        subgraph PACOTE2 [Camada de Negocio]
-            C5[GestaoVeiculos]
-            C6[GestaoVistorias]
-            C7[SistemaLembretes]
-            C8[GestaoFinanceira]
-        end
-        
-        subgraph PACOTE3 [Utilitarios]
-            C9[Calendario]
-            C10[Buscas]
-            C11[Validacoes]
-        end
-    end
-
-    %% Dependencias entre componentes
-    C1 --> C5
-    C1 --> C6
-    C1 --> C7
-    C1 --> C8
-    
-    C2 --> C5
-    C3 --> C11
-    C3 --> C10
-    C4 --> C8
-    
-    C5 --> C9
-    C6 --> C9
-    C7 --> C9
-    C8 --> C9
-    
-    C10 --> C5
-    C10 --> C6
-    C11 --> C5
-    C11 --> C6
-
-    %% Estilizacao
-    classDef presentation fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000000
-    classDef business fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px,color:#000000
-    classDef utils fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
-    classDef package fill:#f5f5f5,stroke:#9e9e9e,stroke-width:1px,color:#000000
-    
-    class C1,C2,C3,C4 presentation
-    class C5,C6,C7,C8 business
-    class C9,C10,C11 utils
-    class PACOTE1,PACOTE2,PACOTE3 package
-```
-teste 
-
 ``` mermaid 
 
 %% Diagrama de Componentes do Sistema de Gestão de Vistorias e IPVA
