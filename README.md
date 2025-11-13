@@ -378,7 +378,7 @@ OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
 ##3.3 Diagrama de Componentes 
 
-O diagrama a seguir é referente aos componentes que formam o sistema. 
+O diagrama a seguir é referente aos componentes que formam o sistema, possui o objetivo de demonstrar a organização modular do sistema, destacando como os principais componentes interagem entre si e com recursos externos.
 
 ```mermaid
 graph TB
@@ -509,6 +509,26 @@ class UI camada
 class Backend backend
 class DB db
 ```
+
+O sistema está dividido em três camadas principais:
+
+1. Interface do Usuário (UI)
+Responsável pela interação com o usuário.
+Contém telas para cadastro, visualização de lembretes, relatórios e tabela de prioridades.
+
+2.Lógica de Negócio (Backend)
+Implementa as regras de negócio do sistema.
+Engloba módulos independentes, como:
+Cadastro — gerencia clientes, veículos e serviços.
+Vistorias — controla registros e lembretes de vistorias.
+Financeiro/IPVA — administra pagamentos e parcelas.
+Relatórios e Agrupamentos — consolida dados e gera relatórios mensais.
+Sinal Público / Processos Devolvidos — controla devoluções e processos administrativos.
+Notificações e Lembretes — envia alertas sobre prazos e vencimentos.
+
+3. Recurso Externo
+O banco de dados é representado como um recurso externo, não como componente interno do sistema.
+Armazena todas as informações operacionais e é acessado pelos componentes da camada de negócio.
 
 ## 4. Telas 
 
