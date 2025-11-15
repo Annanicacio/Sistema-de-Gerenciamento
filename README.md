@@ -376,7 +376,7 @@ Pós-condições: O serviço sai da tela de prioridades e fica registrado no mê
 
 OBS: OS casos de uso é dos 14 itens, prompt: plant uml
 
-##3.3 Diagrama de Componentes 
+## 3.3 Diagrama de Componentes 
 
 O diagrama a seguir é referente aos componentes que formam o sistema, possui o objetivo de demonstrar a organização modular do sistema, destacando como os principais componentes interagem entre si e com recursos externos.
 
