@@ -473,4 +473,10 @@ Armazena todas as informações operacionais e é acessado pelos componentes da 
 
 ## 4. Telas 
 
+Tela 1. Tela incial. 
+
+<img width="1871" height="918" alt="image" src="https://github.com/user-attachments/assets/7a41760c-8817-4240-b926-2a122e094ded" />
+
+Nessa tela, o usuário visualiza suas prioridades do dia, podendo editar ao clicar no cliente. 
+
 
