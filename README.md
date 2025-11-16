@@ -472,6 +472,7 @@ O banco de dados é representado como um recurso externo, não como componente i
 Armazena todas as informações operacionais e é acessado pelos componentes da camada de negócio.
 
 ## 4. Telas 
+Nessa seção, estão disponíveis as telas do projeto, feitas com Django, uma framework de Python para Web. 
 
 Tela 1. Tela incial. 
 
