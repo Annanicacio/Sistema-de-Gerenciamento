@@ -477,7 +477,7 @@ Nessa seção, estão disponíveis as telas do projeto, feitas com Django, uma f
 Tela 1. Tela incial. 
 
 
-<img width="1919" height="1036" alt="image" src="https://github.com/user-attachments/assets/d5c4c295-b0a1-452d-af54-ba73b4e71a70" />
+<img width="1910" height="916" alt="image" src="https://github.com/user-attachments/assets/05a84540-8a6c-45cd-8c53-024b8ba91c91" />
 
 
 Nessa tela, o usuário visualiza suas prioridades do dia. Ao clicar em um cliente, é redirecionado para um formulário em que é possível editar os dados, até mesmo marcar como concluído, o que redireciona o cliente para o seu respectivo mês. 
