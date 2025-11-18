@@ -476,7 +476,6 @@ Nessa seção, estão disponíveis as telas do projeto, feitas com Django, uma f
 
 Tela 1. Tela incial. 
 
-<img width="1908" height="982" alt="image" src="https://github.com/user-attachments/assets/c4ce14d8-a523-48c4-9a7a-29321b3b1773" />
 
 <img width="1919" height="1036" alt="image" src="https://github.com/user-attachments/assets/d5c4c295-b0a1-452d-af54-ba73b4e71a70" />
 
