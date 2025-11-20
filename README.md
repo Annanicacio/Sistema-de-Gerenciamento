@@ -482,4 +482,11 @@ Tela 1. Tela incial.
 
 Nessa tela, o usuário visualiza suas prioridades do dia. Ao clicar em um cliente, é redirecionado para um formulário em que é possível editar os dados, até mesmo marcar como concluído, o que redireciona o cliente para o seu respectivo mês. 
 
+Tela 2. Campo Pesquisa funcionando.
+
+<img width="1919" height="790" alt="image" src="https://github.com/user-attachments/assets/f6ec5e62-32a4-407f-96b0-1dfd146ebcce" />
+
+O campo de pesquisa pode consultar pelo Nome, Placa ou Telefone, utiliza a função de filtragem "icontains" a qual é case insensitive e pesquisa por aquele valor nos campos. Por exemplo, a pesquisa pode ser "QB" e o django retornará todos os campos que possam ter "QB".
+
+
 
