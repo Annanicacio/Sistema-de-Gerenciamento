@@ -484,9 +484,9 @@ Nessa tela, o usuário visualiza suas prioridades do dia. Ao clicar em um client
 
 Tela 2. Campo Pesquisa funcionando.
 
-<img width="1919" height="790" alt="image" src="https://github.com/user-attachments/assets/f6ec5e62-32a4-407f-96b0-1dfd146ebcce" />
+<img width="1919" height="981" alt="image" src="https://github.com/user-attachments/assets/d84ed381-77f2-446b-a4cd-d28b1ad35811" />
 
-O campo de pesquisa pode consultar pelo Nome, Placa ou Telefone, utiliza a função de filtragem "icontains" a qual é case insensitive e pesquisa por aquele valor nos campos. Por exemplo, a pesquisa pode ser "QB" e o django retornará todos os campos que possam ter "QB".
+O campo de pesquisa pode consultar pelo Nome, Placa ou Telefone, utiliza a função de filtragem "icontains" a qual é case insensitive e pesquisa por aquele valor nos campos. Por exemplo, a pesquisa pode ser "an" e o django retornará todos os campos que possam ter "an".
 
 
 
