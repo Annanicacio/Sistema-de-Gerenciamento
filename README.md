@@ -486,5 +486,10 @@ Tela 2. Campo Pesquisa funcionando.
 
 O campo de pesquisa pode consultar pelo Nome, Placa ou Telefone, utiliza a função de filtragem "icontains" a qual é case insensitive e pesquisa por aquele valor nos campos. Por exemplo, a pesquisa pode ser "an" e o django retornará todos os campos que possam ter "an".
 
+Tela 3. Adicionar Cliente.
+
+<img width="1919" height="988" alt="image" src="https://github.com/user-attachments/assets/ea2fdd6c-d355-47c4-9545-feaf4a3bb9ef" />
+
+Ao clicar no botão "aidiconar" na tabela clientes da tela principal,  usuário é redirecionado para essa página.
 
 
