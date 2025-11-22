@@ -477,10 +477,10 @@ Nessa seção, estão disponíveis as telas do projeto, feitas com Django, uma f
 Tela 1. Tela incial. 
 
 
-<img width="1919" height="1009" alt="image" src="https://github.com/user-attachments/assets/4aabacde-5667-4acf-a625-d23f0f91226b" />
+<img width="1917" height="981" alt="image" src="https://github.com/user-attachments/assets/435827d0-720d-407f-8c49-8b8159046100" />
 
 
-Nessa tela, o usuário visualiza suas prioridades do dia. Ao clicar em um cliente, é redirecionado para um formulário em que é possível editar os dados, até mesmo marcar como concluído, o que redireciona o cliente para o seu respectivo mês. 
+Nessa tela, o usuário visualiza suas prioridades do dia. Ao clicar em um cliente, é redirecionado para um formulário em que é possível editar os dados, até mesmo marcar como concluído, o que redireciona o cliente para o seu respectivo mês. Nessa tela há a "paginação", abaixo da tabela de vistorias dá para ir para a próxima página.
 
 Tela 2. Campo Pesquisa funcionando.
 
