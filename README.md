@@ -486,17 +486,29 @@ Tela 2. Detalhes do cliente.
 
 Ao clicar em algum cliente da tabela, o usuário é redirecionado para o detalhamento daquele cliente, como a descrição dos serviços e detalhes do pagamento. 
 
-Tela 3. Aba de processos.
+Tela 3. Relatórios.
+
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/cd065e7b-25bb-4ee8-86ff-b647b5af5cf5" />
+
+Esse componente do sistema possui a finalidade de gerar relatórios dos serviços, como listagens de garagens e de vistorias, para assim ter um controle dos serviços realizados e receber o pagamento do cliente final, bem como organização do financeiro para pagamento de empresas terceirizadas. 
+
+Tela 4. Aba de processos.
 
 <img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/c78d4f44-8576-4edc-9d41-657b3ff27d33" />
 
 No menu lateral esquerdo, ao clicar em "processos", essa tela aparece, dispondo dos processos, ou seja, serviços do mês. É possível filtrar o mês da tabela, o vínculo, isto é, se quer que apareça todos os processos de uma garagem em específico, bem como outro parÂmetro para o filtro. 
 
-Tela 4. Controle de Vistorias.
+Tela 5. Controle de Vistorias.
 
 <img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/cd5cbd03-7ada-4d4e-8387-bcf957fe8b97" />
 
 No menu lateral, há a aba "vistorias" a qual possui um controle de agenda de vistorias, tanto particular como pelo detran. Essa tela é importante pois para as vistorias particulares realizadas, pode ser feito relatórios para acompanhar pagamento com empresa terceirizada de vistoria, bem como acompanhar o pagamento dos clientes e o vencimento de vistorias. 
+
+Tela 6. Gestão de Lembretes. 
+
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/2d15ea34-c2ce-463a-868d-01f5b72ad64b" />
+
+Nessa tela, é possível gerenciar os lembretes mais urgentes, os do dia e para os próximos dias para o organizamento interno da empresa. 
 
 
 
