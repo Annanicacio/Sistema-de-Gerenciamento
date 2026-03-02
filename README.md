@@ -476,20 +476,29 @@ Nessa seção, estão disponíveis as telas do projeto, feitas com Django, uma f
 
 Tela 1. Tela incial. 
 
-<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/b7974e51-8940-4f17-b9d1-8e92f45ea836" />
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/078453e0-a666-4460-96d1-616ccf927362" />
 
 Nessa tela, o usuário visualiza suas prioridades do dia. Ao clicar em um cliente, é redirecionado para um formulário em que é possível editar os dados, até mesmo marcar como concluído, o que redireciona o cliente para o seu respectivo mês. Nessa tela há a "paginação", abaixo da tabela de vistorias dá para ir para a próxima página.
 
-Tela 2. Campo Pesquisa funcionando.
+Tela 2. Detalhes do cliente.
 
-<img width="1919" height="981" alt="image" src="https://github.com/user-attachments/assets/d84ed381-77f2-446b-a4cd-d28b1ad35811" />
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/26d8c62c-9f3d-4731-bcc1-aabea873460c" />
 
-O campo de pesquisa pode consultar pelo Nome, Placa ou Telefone, utiliza a função de filtragem "icontains" a qual é case insensitive e pesquisa por aquele valor nos campos. Por exemplo, a pesquisa pode ser "an" e o django retornará todos os campos que possam ter "an".
+Ao clicar em algum cliente da tabela, o usuário é redirecionado para o detalhamento daquele cliente, como a descrição dos serviços e detalhes do pagamento. 
 
-Tela 3. Adicionar Cliente.
+Tela 3. Aba de processos.
 
-<img width="1919" height="988" alt="image" src="https://github.com/user-attachments/assets/ea2fdd6c-d355-47c4-9545-feaf4a3bb9ef" />
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/c78d4f44-8576-4edc-9d41-657b3ff27d33" />
 
-Ao clicar no botão "aidiconar" na tabela clientes da tela principal,  usuário é redirecionado para essa página.
+No menu lateral esquerdo, ao clicar em "processos", essa tela aparece, dispondo dos processos, ou seja, serviços do mês. É possível filtrar o mês da tabela, o vínculo, isto é, se quer que apareça todos os processos de uma garagem em específico, bem como outro parÂmetro para o filtro. 
+
+Tela 4. Controle de Vistorias.
+
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/cd5cbd03-7ada-4d4e-8387-bcf957fe8b97" />
+
+No menu lateral, há a aba "vistorias" a qual possui um controle de agenda de vistorias, tanto particular como pelo detran. Essa tela é importante pois para as vistorias particulares realizadas, pode ser feito relatórios para acompanhar pagamento com empresa terceirizada de vistoria, bem como acompanhar o pagamento dos clientes e o vencimento de vistorias. 
+
+
+
 
 
