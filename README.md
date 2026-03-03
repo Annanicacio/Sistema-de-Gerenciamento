@@ -516,6 +516,10 @@ Tela 7. Controle de IPVAs.
 
 Nessa tela, há a disponibilização das parcelas de IPVA dos clientes, bem como os IPVAs que foram pagos de forma integral, para um controle interno do recebimento. Ao criar um novo registro de IPVA, o card fica na coluna "a enviar", para mudar de coluna, é só mudar o status do card, o botão de 3 pontinhos. Essa tela tem o intuito de acompanhar os parcelamentos. No botão de 3 pontos, deve ser possível editar o card, excluir ou mudar o status.
 
+Tela 8. Gerenciamento de Sinal Público.
 
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/6149b316-140f-47e1-9053-351a3ac98ff5" />
+
+Sinal público é um serviço de cartório que é necessário fazer a conferência para cobrança, por isso haverá uma tabela dispondo dos sinais públicos realizados no mês. É possível gerar um relatório.
 
 
