@@ -474,51 +474,74 @@ Armazena todas as informações operacionais e é acessado pelos componentes da 
 ## 4. Telas 
 Nessa seção, estão disponíveis as telas do projeto, feitas com Django, uma framework de Python para Web. 
 
-Tela 1. Tela incial. 
+### Tela 1. Tela incial. 
+
 
 <img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/078453e0-a666-4460-96d1-616ccf927362" />
 
+
 Nessa tela, o usuário visualiza suas prioridades do dia. Ao clicar em um cliente, é redirecionado para um formulário em que é possível editar os dados, até mesmo marcar como concluído, o que redireciona o cliente para o seu respectivo mês. Nessa tela há a "paginação", abaixo da tabela de vistorias dá para ir para a próxima página.
 
-Tela 2. Detalhes do cliente.
+
+### Tela 2. Detalhes do cliente.
+
 
 <img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/26d8c62c-9f3d-4731-bcc1-aabea873460c" />
 
+
 Ao clicar em algum cliente da tabela, o usuário é redirecionado para o detalhamento daquele cliente, como a descrição dos serviços e detalhes do pagamento. 
 
-Tela 3. Relatórios.
 
-<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/cd065e7b-25bb-4ee8-86ff-b647b5af5cf5" />
+### Tela 3. Aba de processos.
 
-Esse componente do sistema possui a finalidade de gerar relatórios dos serviços, como listagens de garagens e de vistorias, para assim ter um controle dos serviços realizados e receber o pagamento do cliente final, bem como organização do financeiro para pagamento de empresas terceirizadas. 
-
-Tela 4. Aba de processos.
 
 <img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/c78d4f44-8576-4edc-9d41-657b3ff27d33" />
 
+
 No menu lateral esquerdo, ao clicar em "processos", essa tela aparece, dispondo dos processos, ou seja, serviços do mês. É possível filtrar o mês da tabela, o vínculo, isto é, se quer que apareça todos os processos de uma garagem em específico, bem como outro parÂmetro para o filtro. 
 
-Tela 5. Controle de Vistorias.
+
+### Tela 4. Relatórios.
+
+
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/cd065e7b-25bb-4ee8-86ff-b647b5af5cf5" />
+
+
+Esse componente do sistema possui a finalidade de gerar relatórios dos serviços, como listagens de garagens e de vistorias, para assim ter um controle dos serviços realizados e receber o pagamento do cliente final, bem como organização do financeiro para pagamento de empresas terceirizadas. 
+
+
+### Tela 5. Controle de Vistorias.
+
 
 <img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/cd5cbd03-7ada-4d4e-8387-bcf957fe8b97" />
 
+
 No menu lateral, há a aba "vistorias" a qual possui um controle de agenda de vistorias, tanto particular como pelo detran. Essa tela é importante pois para as vistorias particulares realizadas, pode ser feito relatórios para acompanhar pagamento com empresa terceirizada de vistoria, bem como acompanhar o pagamento dos clientes e o vencimento de vistorias. 
 
-Tela 6. Gestão de Lembretes. 
+
+### Tela 6. Gestão de Lembretes. 
+
 
 <img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/2d15ea34-c2ce-463a-868d-01f5b72ad64b" />
 
+
 Nessa tela, é possível gerenciar os lembretes mais urgentes, os do dia e para os próximos dias para o organizamento interno da empresa. 
 
-Tela 7. Controle de IPVAs.
+
+### Tela 7. Controle de IPVAs.
+
 
 <img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/73686562-ddd6-4eae-b9fd-f39993a8a96b" />
 
+
 Nessa tela, há a disponibilização das parcelas de IPVA dos clientes, bem como os IPVAs que foram pagos de forma integral, para um controle interno do recebimento. Ao criar um novo registro de IPVA, o card fica na coluna "a enviar", para mudar de coluna, é só mudar o status do card, o botão de 3 pontinhos. Essa tela tem o intuito de acompanhar os parcelamentos. No botão de 3 pontos, deve ser possível editar o card, excluir ou mudar o status.
 
-Tela 8. Gerenciamento de Sinal Público.
+
+### Tela 8. Gerenciamento de Sinal Público.
+
 
 <img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/6149b316-140f-47e1-9053-351a3ac98ff5" />
+
 
 Sinal público é um serviço de cartório que é necessário fazer a conferência para cobrança, por isso haverá uma tabela dispondo dos sinais públicos realizados no mês. É possível gerar um relatório.
 
