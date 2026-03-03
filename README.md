@@ -510,6 +510,11 @@ Tela 6. Gestão de Lembretes.
 
 Nessa tela, é possível gerenciar os lembretes mais urgentes, os do dia e para os próximos dias para o organizamento interno da empresa. 
 
+Tela 7. Controle de IPVAs.
+
+<img width="1600" height="1280" alt="screen" src="https://github.com/user-attachments/assets/73686562-ddd6-4eae-b9fd-f39993a8a96b" />
+
+Nessa tela, há a disponibilização das parcelas de IPVA dos clientes, bem como os IPVAs que foram pagos de forma integral, para um controle interno do recebimento. Ao criar um novo registro de IPVA, o card fica na coluna "a enviar", para mudar de coluna, é só mudar o status do card, o botão de 3 pontinhos. Essa tela tem o intuito de acompanhar os parcelamentos. No botão de 3 pontos, deve ser possível editar o card, excluir ou mudar o status.
 
 
 
